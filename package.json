@@ -1,6 +1,6 @@
 {
 	"name": "@m4rch/npm-check-updates",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "check and update outdated dependencies in your package.json",
 	"author": "m4rch",
 	"license": "Unlicense",

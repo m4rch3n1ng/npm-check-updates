@@ -1,5 +1,5 @@
 import semver from "semver"
-import https from "https"
+import https from "node:https"
 
 export async function getAllVersions ( pkgs ) {
 	return Object.fromEntries(

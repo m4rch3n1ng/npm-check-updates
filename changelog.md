@@ -7,6 +7,12 @@ and this project adheres to [semantic versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [0.1.2] - 2022-06-04
+
+### changed
+
+- changed import to `node:https`
+
 ## [0.1.1] - 2022-06-04
 
 ### added
