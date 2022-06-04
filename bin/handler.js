@@ -101,11 +101,15 @@ function progress ( num ) {
 		process.exit()
 	})
 
+	process.on("beforeExit", () => {
+		stdout.write("\x1b[?25h\n")
+	})
+
 	return {
-		inc () {
+		inc ( a = 1 ) {
 			if (amount == max) return
 
-			amount++
+			amount += a
 			write = Math.round(amount / max * len)
 
 			stdout.write(`[${"#".repeat(write)}${"-".repeat(len - write)}] ${amount}/${max} ${(amount / max * 100).toFixed(0)}%`)

@@ -1,6 +1,6 @@
 {
 	"name": "@m4rch/npm-check-updates",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "check and update outdated dependencies in your package.json",
 	"author": "m4rch",
 	"license": "Unlicense",
@@ -15,12 +15,12 @@
 		"./handler": "./bin/handler.js"
 	},
 	"bin": {
-		"@m4rch/npm-check-updates": "bin/ncu.js",
-		"ncu": "bin/ncu.js"
+		"ncu": "bin/ncu.js",
+		"npm-check-updates": "bin/ncu.js"
 	},
 	"dependencies": {
-		"sade": "^1.7.4",
-		"semver": "^7.3.5"
+		"sade": "^1.8.1",
+		"semver": "^7.3.7"
 	},
 	"type": "module"
 }

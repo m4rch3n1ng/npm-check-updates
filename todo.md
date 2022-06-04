@@ -2,12 +2,21 @@
 
 ## general
 
+- [x] progress bar
+- [ ] validate
+- [ ] different package managers
+- [ ] omitting last characters
+
 ## content
 
 ## bugs
 
-- struggles with beta versions
-- does not work with .x
-- some more edge cases
+- [ ] struggles with beta versions
+- [ ] .x/.* syntax support
+- [ ] some more edge cases
 
 ## misc
+
+- [ ] beautify
+- [ ] tests
+- [ ] typescript
