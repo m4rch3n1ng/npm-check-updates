@@ -14,4 +14,4 @@ interface updated {
 	new: string
 }
 
-export default function ncu ( pkg: pkg, { semver }?: { semver: boolean }): Promise<updated>
+export default function ncu ( pkg: pkg, { semver }?: { semver: boolean }): Promise<updated[]>

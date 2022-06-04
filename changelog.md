@@ -7,6 +7,12 @@ and this project adheres to [semantic versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [0.1.3] - 2022-06-04
+
+### fixed
+
+- fixed types to return array of `updated`
+
 ## [0.1.2] - 2022-06-04
 
 ### changed

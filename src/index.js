@@ -24,7 +24,7 @@ export default async function ncu ( pkg, { semver: opSem = false } = {}) {
 				}
 			})
 
-			updated.push(...localUpdated.filter(( dep ) => dep && dep.new != dep.old))
+			updated.push(...localUpdated.filter(( dep ) => dep && dep.new !== dep.old))
 		}
 	}
 
