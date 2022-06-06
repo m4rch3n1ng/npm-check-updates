@@ -16,15 +16,20 @@ export default async function ncu ( pkg, { semver: opSem = false } = {}) {
 				if (!semver.validRange(range)) return null
 
 				const [ start = "" ] = /^([\^~=]|[><]=?)/.exec(range) || []
+				const n = !opSem ? semver.maxSatisfying(versions, "*") : semver.maxSatisfying(versions, range)
+
+				if (!n) return null
+
 				return {
 					name,
 					from: type,
 					old: range,
-					new: !opSem ? `${start}${semver.maxSatisfying(versions, "*")}` : `${start}${semver.maxSatisfying(versions, range)}`
+					new: `${start}${n}`
 				}
 			})
 
-			updated.push(...localUpdated.filter(( dep ) => dep && dep.new !== dep.old))
+			const localFiltered = localUpdated.filter(( dep ) => dep && dep.new !== dep.old)
+			updated.push(...localFiltered)
 		}
 	}
 

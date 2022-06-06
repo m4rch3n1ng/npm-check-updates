@@ -7,19 +7,25 @@ and this project adheres to [semantic versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
-## [0.1.3] - 2022-06-04
+## [0.1.4]
+
+### fixed
+
+- fixed bug with non-semver `-next.x` types
+
+## [0.1.3]
 
 ### fixed
 
 - fixed types to return array of `updated`
 
-## [0.1.2] - 2022-06-04
+## [0.1.2]
 
 ### changed
 
 - changed import to `node:https`
 
-## [0.1.1] - 2022-06-04
+## [0.1.1]
 
 ### added
 
@@ -29,7 +35,7 @@ and this project adheres to [semantic versioning](https://semver.org/spec/v2.0.0
 
 - bump version
 
-## [0.1.0] - 2021-09-14
+## [0.1.0]
 
 ### added
 
